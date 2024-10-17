@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 35px 12%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+  }
+  .logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  .logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1.1);             
+  }
+  span{
+    color: orangered;
+  }
+.navbar a{
+  font-size: 18px;
+  color:white;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+    
+.navbar a:hover,
+.navbar a.active {
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
+.contact{
+
+  padding: 10px 28px;
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.contact:hover{
+  background-color: orangered;
+  box-shadow: 0 0 25px orangered;
+  color: white;
+}
+
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  padding: 30px 12% 0;
+}
+.home-content{
+  max-width: 500px;
+}
+.home-content h1{
+  font-size: 40px;
+
+}
+.home-content h3{
+  margin-top: 10px;
+  font-size: 25px;
+  line-height: 1.2;
+ 
+}
+.home-content h3 span{
+  position: relative;
+}
+.home-content h3 span::before{
+  content: "Web Developer";
+  color: orangered;
+  animation: words 20s infinite;
+}
+.home-content h3 span::after{
+  content: "";
+  position: absolute;
+  background: rgb(241, 241, 241);
+  width: calc(100% + 8px);
+  height: 100%;
+  right: -8px;
+  border-left: 3px solid rgb(241, 241, 241);
+  animation: cursor 0.6s infinite,typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to{
+    border-left: 2px solid orangered;
+  }
+  
+}
+@keyframes words{
+  0%,
+  20%{
+    content: "Frontend Developer";
+  }
+  21%,
+  40%{
+    content: "Web Designer";
+  }
+  41%,
+  60%{
+    content: "UI/UX Designer";
+  }
+  61%,
+  80%{
+    content: "Web Developer";
+  }
+  81%,
+  100%{
+    content: "Software Developer";
+  }
+}
+@keyframes typing{
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95%{
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85%{
+    width: calc(100% + 8px);
+  }
+}
+.home-content p{
+  font-size: 15px;
+  margin: 20px 0 30px;
+  font-family: 'poppins',sans-serif;
+}
+.bth-box{
+  width: 345px;
+  display: flex;
+  gap: 2em;
+
+}
+.btn-1{
+  padding: 15px 28px ;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px ;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.btn-1:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.btn-2{
+  padding: 15px 28px ;
+  background-color: orangered;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px ;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.btn-2:hover{
+  background-color: white;
+  color: orangered;
+}
+.img-box img{
+  border-radius: 50%;
+  width: 300px;
+  height: 380px;
+  margin-left: 90px;
+  
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: orangered;
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50px;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  background:black;
+}
+.about-img img{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 25px orangered,
+              0 0 50px orangered;
+  border-radius: 50%;
+     
+}
+.about-content h2{
+  text-align: left;
+  color: white;
+  font-size: 30px;
+}
+.about-content h3{
+  font-size: 40px;
+  color: white;
+}
+.about-content p{
+  color: white;
+  font-size: 15px;
+  margin: 2em 0 3em;
+}
+
+.heading{
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.education{
+  padding: 20px 15px;
+  background-color: rgb(241, 241, 241);
+}
+.education h2{
+  margin-bottom: 2rem;
+}
+.timeline-items{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: rgb(241, 241, 241);
+  left:calc(50% - 1px)
+}
+.timeline-item{
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child{
+  margin-bottom: 10px;
+}
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even){
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+  height: 21px;
+  width: 21px;
+  background-color: orangered;
+  box-shadow: 0 0 25px orangered,
+              0 0 50px orangered;
+  position: absolute;
+  left: calc(50% - 8px );
+  border-radius: 50%;
+  top: 10px;
+}
+.timeline-date{
+  font-size: 20px;
+  font-weight: 800px;
+  color: black;
+  margin: 6px 0 15px;
+}
+.timeline-content{
+  background-color: rgb(241, 241, 241);
+  border: 3px solid orangered;
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px orangered;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.timeline-content:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px orangered;
+}
+.timeline-content h3{
+  font-size: 20px;
+  color: black;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+.timeline-content p{
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.services{
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.services h2{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.heading2{
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.service-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  
+}
+
+.service-box{
+  background-color: orangered;
+  height: 200px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 50px;
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  
+}
+.service-box:hover{
+  background: white;
+  color: black;
+  border: 5px solid orangered;
+  transform: scale(1.03);
+}
+
+.service-box .service-info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 100px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 2rem 5rem;
+}
+
+.service-info h3{
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 3;
+}
+.service-info p{
+  font-size: 1rem;
+  font-weight: 200;
+  max-height: 100px;
+  line-height: 1.7;
+  margin: auto;
+}
+
+.contact-form h2{
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+}
+.contact-form form{
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.contact-form form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+  width: 50%;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  background: rgb(241, 241, 241);
+  border-radius: .8rem;
+  margin:1rem 0;
+  resize: none;
+  justify-content: center;
+}
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: black ;
+}
+.footer .social{
+  text-align: center;
+  padding-bottom: 26px;
+  color: white;
+}
+ 
+.footer .social a{
+  font-size: 24px;
+  color: white;
+  border: 2px sold orangered;
+  width: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+  transform: scale(1.2)translateY(-10px);
+  color: orangered;
+  border: 2px solid orangered;
+}
+ 
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: o.3s ease; 
+}
+
+.footer ul li a:hover{
+  border-bottom: 3px solid orangered;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .projects-container {
+      grid-template-columns: 1fr; /* Stacks items in one column */
+  }
+  .home {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 2em; /* Adjust gap for smaller screens */
+  }
+  .btn-1, .btn-2 {
+      margin-left: 0; /* Center buttons */
+  }
+}
+
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem 0;
+}
+
+.project-box {
+  background-color: orangered;
+  width: 400px;
+  height: 430px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+  text-align: left;
+}
+
+/* Hover Effect */
+.project-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  padding-left: 35px;
+}
+
+.project-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+img {
+  position: relative;
+  width: 380px; /* Responsive width */
+  height: 200px;
+  padding: 10px;
+  margin-right: 50px;
+  border-radius: 1rem;
+}
+
+.btn {
+  padding: 15px 28px;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: inline-block; /* Ensures proper spacing */
+  text-align: center;
+  margin: 15px auto; /* Center the buttons */
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+      grid-template-columns: 1fr;
+  }
+
+  .project-box {
+      width: 100%; /* Full width on small screens */
+  }
+}
+
+.openVideoButton{
+  padding: 15px 28px ;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px ;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 15px;
+  
+}
+
+/* General desktop styles (default) */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Mobile view (max width 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .nav-bar {
+    display: none; /* Hide large menus */
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+/* Desktop grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Mobile grid */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Typography scaling */
+h1 {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .hero-section video {
+    display: none;
+  }
+}

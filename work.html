@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WORK</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <section class="work" id="work">
+        <h2 class="heading">MY <span>Work</span></h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="images/musicplayer.png" alt="Responsive Music Player">
+                <h4>Responsive Music Player</h4>
+                <p>Responsive Music Player built with HTML, CSS, and JavaScript.</p>
+                <button class="openVideoButton" data-video="video1">Play Video</button>
+                <div id="videoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <video id="videoPlayer" width="300" controls>
+                            <source src="images/videos/video (1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/Amazon.png" alt="Amazon Clone">
+                <h4>E-commerce Website</h4>
+                <p>Discover, shop, and enjoy a seamless online shopping experience with our Amazon Clone.</p>
+                <button class="openVideoButton" data-video="video2">Play Video</button>
+                <div id="videoModal-1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <video id="video2" class="videoPlayer" width="300" controls>
+                            <source src="images/videos/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="images/food.png" alt="Food App Mobile View">
+                <h4>Food App Mobile View</h4>
+                <p>I designed a user-friendly food app prototype using Figma, focusing on seamless UI/UX.</p>
+                <button class="openVideoButton" data-video="video3">Play Video</button>
+                <div id="videoModal-2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <video id="video3" class="videoPlayer" width="300" controls>
+                            <source src="images/videos/video (2).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for modal functionality
+        document.querySelectorAll('.openVideoButton').forEach(button => {
+            button.addEventListener('click', function() {
+                const modal = this.nextElementSibling;
+                const videoPlayer = modal.querySelector('video');
+                modal.style.display = 'block';
+                videoPlayer.play();
+            });
+        });
+
+        document.querySelectorAll('.close').forEach(span => {
+            span.addEventListener('click', function() {
+                const modal = span.closest('.modal');
+                const videoPlayer = modal.querySelector('video');
+                videoPlayer.pause();
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

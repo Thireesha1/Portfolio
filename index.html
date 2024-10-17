@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link  href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo"><span>3</span>sha</a>
+    <nav class="navbar">
+    <a href="index.html" class="active">Porfolio</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="work.html">Mywork</a>
+    <a href="services.html">Services</a>
+  </nav>
+
+  <a href="contact.html" class="contact">Contact Me</a>
+   </header>
+    
+   <section class="home">
+    <div class="home-content">
+      <h1>Hi, It's <span>Thireesha</span></h1>
+      <h3>I'm a <span></span></h3>
+      <p>I am a passionate front-end developer with experience in 
+        UI/UX <br> design and building responsive websites.I actively 
+        enhance <br> my skills through projects,competitions,
+        hackathons & internships.</p>
+       
+        <div class="btn-box">
+          <button class="btn-1">Hire Me</button>
+          <a href="https://drive.google.com/file/d/1fzoi7P17mQ8zNPvnTgS_MsoDYaYyvgOH/view?usp=drivesdk" download="THIREESHA_CV.pdf">
+          <button class="btn-2">Download CV</button></a>
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="images/m5.jpg" alt="">
+      </div>
+   </section>
+
+   <section class="about">
+    <div class="about-img">
+      <img src="images/m5.jpg" alt="">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About<span> Me</span></h2>
+      <h3>Frontend <span>Developer</span></h3>
+      <p>I am Thireesha K, a passionate front-end developer and aspiring software engineer<br> with a knack
+         for creating intuitive, user-friendly digital experiences. Skilled in building <br> responsive
+          websites and engaging interfaces, I bring hands-on experience in web <br> development  and UI/UX design.
+           Throughout my journey, I have contributed
+         to<br>  innovative projects like a music player,  e-commerce platforms, and mobile app <br> prototypes.
+        Driven by a love for continuous learning, I actively participate in hackathons,<br>  competitions, 
+        and internships to sharpen my skills. With proficiency in<br>  Java, Python, React.js, and modern
+         design tools, I aim to leverage technology<br>  to solve real-world problems and grow as a full-stack developer.
+      </p>
+      <a href="https://drive.google.com/file/d/1fzoi7P17mQ8zNPvnTgS_MsoDYaYyvgOH/view?usp=drivesdk" class="btn-2">Resume</a>
+    </div>
+   </section>
+
+   <section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="timeline-items">
+        <div class="timeline-item">
+            <div class="timeline-dot"> </div>
+                <div class="timeline-date">2021-2025</div>
+                <div class="timeline-content">
+                    <h3><b>University</b></h3>
+                    <p> B.E– Computer Science and Engineering <br>
+                        Dhaanish ahmed college of Engineering - (CGPA: 8.7 / 10) 
+                    </p>
+                </div>
+            
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                <div class="timeline-date">2020-2021</div>
+                <div class="timeline-content">
+                    <h3> <b>High School</b></h3>
+                    <p>  Computer Science and Mathematics <br> 
+                    Chennai Girls Higher Secondary School - (Percentage: 85) </p>
+                </div>
+            
+        </div>
+        
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+  <h2 class="heading2">Services</h2>
+  <div class="service-container">
+      <div class="service-box">
+          <div class="service-info">
+              <h3>UI UX DESIGN</h3>
+              <p> Crafting user-friendly and visually 
+                  appealing interfaces to enhance user
+                   experiences across web and mobile platforms.</p>
+          </div>
+      </div>
+      <div class="service-box">
+          <div class="service-info">
+              <h3>FRONTEND DEVELOPMENT</h3>
+              <p> Building responsive and interactive websites using HTML,
+                   CSS, and JavaScript frameworks.</p>
+          </div>
+      </div>
+       <div class="service-box">
+          <div class="service-info">
+              <h3>BACKEND DEVELOPMENT</h3>
+              <p>Managing server-side logic, databases,
+                   and APIs to ensure smooth data processing
+                    and application functionality.</p>
+          </div>
+      </div>
+      <div class="service-box">
+          <div class="service-info">
+              <h3>FULLSTACK DEVELOPMENT</h3>
+              <p> Delivering end-to-end solutions by 
+                  integrating both frontend and backend technologies for complete web applications.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <h2 class="heading">MY <span>Work</span></h2>
+  <div class="projects-container">
+      <div class="project-box">
+          <img src="images/musicplayer.png" alt="Responsive Music Player">
+          <h4>Responsive Music Player</h4>
+          <p>Responsive Music Player built with HTML, CSS, and JavaScript.</p>
+          <button class="openVideoButton" data-video="video1">Play Video</button>
+          <div id="videoModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <video id="videoPlayer" width="300" controls>
+                      <source src="images/videos/video (1).mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+      <div class="project-box">
+          <img src="images/Amazon.png" alt="Amazon Clone">
+          <h4>E-commerce Website</h4>
+          <p>Discover, shop, and enjoy a seamless online shopping experience with our Amazon Clone.</p>
+          <button class="openVideoButton" data-video="video2">Play Video</button>
+          <div id="videoModal-1" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <video id="video2" class="videoPlayer" width="300" controls>
+                      <source src="images/videos/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+      <div class="project-box">
+          <img src="images/food.png" alt="Food App Mobile View">
+          <h4>Food App Mobile View</h4>
+          <p>I designed a user-friendly food app prototype using Figma, focusing on seamless UI/UX.</p>
+          <button class="openVideoButton" data-video="video3">Play Video</button>
+          <div id="videoModal-2" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <video id="video3" class="videoPlayer" width="300" controls>
+                      <source src="images/videos/video (2).mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  // JavaScript for modal functionality
+  document.querySelectorAll('.openVideoButton').forEach(button => {
+      button.addEventListener('click', function() {
+          const modal = this.nextElementSibling;
+          const videoPlayer = modal.querySelector('video');
+          modal.style.display = 'block';
+          videoPlayer.play();
+      });
+  });
+
+  document.querySelectorAll('.close').forEach(span => {
+      span.addEventListener('click', function() {
+          const modal = span.closest('.modal');
+          const videoPlayer = modal.querySelector('video');
+          videoPlayer.pause();
+          modal.style.display = 'none';
+      });
+  });
+</script>
+
+   <section class="contact-form">
+    <h2 class="contact-me">Contact<span> Me</span></h2>
+    <form onsubmit="sendEmail(); reset(); return false ;">
+      <div class="input-box">
+        <input type="text" name="fullName" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="subject" placeholder="Subject">
+      </div>
+      <div class="input-box">
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+     
+    </div>
+    <input type="submit" value="Send Message" class="btn-1">
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle' ></i></a>
+      <a href="https://www.linkedin.com/in/thireesha-k-614b2224a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square' ></i></a>
+      <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+      <a href="https://github.com/Thireesha1"><i class='bx bxl-github' ></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      <li>
+        <a href="services.html">Services</a>
+      </li>
+      <li>
+        <a href="about.html">About Me</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="#">Privacy Policy</a>
+      </li>
+    </ul>
+    <p class="copyright">© 2024 Thireesha | All rights reserved</p>
+  </footer>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+  
+  <script src="script.js"></script>
+
+  <!-- Mobile hamburger button -->
+<button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+<nav class="mobile-menu" style="display: none;">
+  <a href="#home">Home</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.mobile-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
